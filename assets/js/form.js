@@ -57,7 +57,7 @@ function buildMessage() {
 // WhatsApp deep link
 function updateWaLink() {
   const msg = encodeURIComponent(buildMessage());
-  waLink.href = `https://wa.me/254712345678?text=${msg}`;
+  waLink.href = `https://wa.me/254726898381?text=${msg}`;
 }
 if (waLink) {
   updateWaLink();
