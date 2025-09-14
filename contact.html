@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Get a Quote | Nairobi Movers & Packers</title>
+  <meta name="description" content="Request a free moving quote in Nairobi. Same-day site surveys available."/>
+  <link rel="icon" href="assets/img/favicon.png"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html">
+        <svg aria-hidden="true" viewBox="0 0 24 24" class="logo-icon"><path d="M3 7h18v10H3zM3 11h18M7 15h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>Nairobi Movers</span>
+      </a>
+      <nav id="primaryNav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-sm active">Get Quote</a>
+      </nav>
+      <button id="navToggle" class="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container grid grid-2">
+      <div>
+        <h1>Request a quote</h1>
+        <p>Fill the form and we’ll get back with an estimate. For faster replies, use WhatsApp.</p>
+
+        <form id="quoteForm" class="form" novalidate>
+          <div class="form-row">
+            <label for="name">Full name*</label>
+            <input id="name" name="name" required placeholder="Jane Doe" />
+            <small class="error"></small>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone (WhatsApp)*</label>
+            <input id="phone" name="phone" required placeholder="+2547..." />
+            <small class="error"></small>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" />
+            <small class="error"></small>
+          </div>
+          <div class="form-row">
+            <label for="service">Service*</label>
+            <select id="service" name="service" required>
+              <option value="">Select...</option>
+              <option>House Moving</option>
+              <option>Office Relocation</option>
+              <option>Packing & Storage</option>
+              <option>Local Delivery</option>
+            </select>
+            <small class="error"></small>
+          </div>
+          <div class="grid grid-2 gap form-row">
+            <div>
+              <label for="from">From (Estate/Area)*</label>
+              <input id="from" name="from" required placeholder="Kilimani" />
+              <small class="error"></small>
+            </div>
+            <div>
+              <label for="to">To (Estate/Area)*</label>
+              <input id="to" name="to" required placeholder="Westlands" />
+              <small class="error"></small>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="date">Preferred date</label>
+            <input id="date" name="date" type="date" />
+          </div>
+          <div class="form-row">
+            <label for="details">Details</label>
+            <textarea id="details" name="details" rows="5" placeholder="Bedrooms, floors, lift access, special items..."></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send Request</button>
+            <a id="waLink" class="btn btn-outline" target="_blank" rel="noopener">Send via WhatsApp</a>
+          </div>
+          <p id="formStatus" class="muted" role="status"></p>
+        </form>
+      </div>
+
+      <div>
+        <div class="contact-card">
+          <h2>Contact details</h2>
+          <p><strong>Phone:</strong> <a href="tel:+254712345678">+254 712 345 678</a></p>
+          <p><strong>Email:</strong> <a href="mailto:hello@example.com">hello@example.com</a></p>
+          <p><strong>Address:</strong> Kindaruma Rd, Nairobi</p>
+          <div class="map-embed">
+            <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Kindaruma%20Road%20Nairobi&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container copyright">© <span id="year"></span> Nairobi Movers & Packers.</div>
+  </footer>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/form.js" defer></script>
+</body>
+</html>
